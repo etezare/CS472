@@ -23,8 +23,9 @@ body{
 .link{
     color: #A4A400
 }
-div li{
+div ul li{
     list-style-type:none;
+    margin-left: 0em;
 }
 aside {
     width: 40%;
