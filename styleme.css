@@ -1,0 +1,44 @@
+body{
+  background-color: gray;
+  font-size: 16pt; 
+}
+h1,h2{
+    color: blue;
+}
+strong{
+    font-family: Arial ;
+    color:rgba(255, 174, 0, 0.877)
+}
+h1{
+    text-align: center;
+}
+#happy, #sad{
+    height: 200px;
+    width: 200px;
+}
+dt{
+    font-family: Arial ;
+    color:rgba(255, 174, 0, 0.877)
+}
+dd{
+    font-size: medium;
+}
+ol{
+    font-style: inherit;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+ }
+ol li:first-letter{
+    color: #903;
+    float: left;
+    font-family: Georgia;
+    font-size: 40px;
+    line-height: 10px;
+    padding-top: 13px;
+    padding-right: 4px;
+    padding-left: 3px;
+ }
