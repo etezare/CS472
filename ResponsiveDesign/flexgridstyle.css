@@ -1,0 +1,75 @@
+h1{
+    background-color: lightblue;
+    text-align: center;
+    line-height: 75px;
+    margin-bottom: 0px;
+}
+
+.flex-container{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(35, 58, 58);
+}
+
+.flex-container > div {
+    color: white;
+    width: 100px;
+    border: solid 1px black;
+    text-align: center;
+    line-height: 75px;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: gray;
+    
+    padding: 20px;
+  flex:30%;
+}
+
+.col2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: darkgray;
+    padding: 20px;
+  flex:30%;
+}
+
+.col3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color:lightgray;
+    padding: 20px;
+  flex:30%;
+}
+
+h2{
+    margin-top: 0px;
+    line-height: 75px;
+    background-color:rgb(35, 58, 58);
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .wrapper, h1, h2,.flex-container{   
+      flex-direction: column;
+    }
+  }
