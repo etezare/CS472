@@ -7,7 +7,7 @@ body{
     border-radius: 50%; 
 }
 footer{
-    position: relative;;
+    position: absolute;
     bottom: 0; 
     color:lightgray;
 }
