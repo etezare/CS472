@@ -1,0 +1,93 @@
+body{
+    background-image: url("images/background.png");
+    font-family: verdana,tahoma,sans-serif ;
+    font-size: 8pt;
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0em;
+}
+#bannerbackground{
+    height: 50px;
+    background-image: url(images/bannerbg.png);
+}   
+h1{
+    text-shadow:3px 3px #999999;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+}
+#maincontainer{
+    width:  800px;
+    border: 4px gray solid;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#rotten{
+    margin-bottom: 10px;
+    width: 800px;
+    background-image: url(images/rbg.png);
+    font-size: 48pt;
+    color: red;
+    height: 83px;
+    vertical-align: middle;
+}
+#columns{
+    column-count: 2;
+    column-gap: 2%;
+    font-size: 8pt;
+    font-weight: bold;
+  
+}
+#columns .review img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+#columns .review{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-left: 5px;
+    background-color: #E8DC9B;
+    border:2px gray solid;
+    border-radius: 10px;
+    text-align: start;
+   
+}
+#columns .reviewers{
+    font-style: italic;
+    margin-bottom: 40px;
+}
+#columns .reviewers img{
+    float: left;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+#rotten .overview{
+    background-color: #A2B964;
+    width: 250px;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.overview dl{
+    padding: 10pt;
+}
+
+dt{
+    font-weight: bold;
+}
+#validator{
+    position: fixed;
+    bottom: 0px;
+    right:10px;
+}
+#pages{
+    background-color: #A2B964;
+    margin-top: 40px;
+    margin-bottom: 0em;
+    text-align: center;
+}
