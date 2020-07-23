@@ -9,6 +9,7 @@ body{
 }
 #bannerbackground{
     height: 50px;
+    text-align: center;
     background-image: url(images/bannerbg.png);
 }   
 h1{
@@ -89,6 +90,7 @@ dd{
     margin-bottom: 10px;
 }
 #validator{
+    opacity: 50%;
     position: fixed;
     bottom: 0px;
     right:10px;
