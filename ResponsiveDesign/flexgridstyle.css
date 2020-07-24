@@ -72,7 +72,7 @@ h2{
   flex-wrap: wrap;
 }
 @media screen and (max-width: 600px) {
-    .wrapper, h1, h2,.flex-container .validator{   
+    .wrapper, h1, h2,.flex-container, .validator{   
       flex-direction: column;
     }
   }
