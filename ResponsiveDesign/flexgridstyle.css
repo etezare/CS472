@@ -68,8 +68,11 @@ h2{
     text-align: center;
     color: white;
 }
+.validator{
+  flex-wrap: wrap;
+}
 @media screen and (max-width: 600px) {
-    .wrapper, h1, h2,.flex-container{   
+    .wrapper, h1, h2,.flex-container .validator{   
       flex-direction: column;
     }
   }
