@@ -110,9 +110,9 @@ console.log("Expected output of sum([1,2,3,4,5,6]) is 21  " + myFunctionTest(21,
 console.assert((myFunctionTest(11, sum([1, 2, 3, 4, 5, 6]))) == "TEST SUCCEEDED", "Failed assert test");
 console.log("Expected output of multiply([1,2,3,4,5,6]) is 720  " + myFunctionTest(720, multiply([1, 2, 3, 4, 5, 6])));
 console.assert((myFunctionTest (720, multiply([1, 2, 3, 4, 5, 6])))== "TEST SUCCEEDED", "Failed assert test");
-console.log("Expected output of reverse('Essey') is yessE " + myFunctionTest("yessE", reverse("Essey")));
+console.log("Expected output of reverse('Essey') is 'yessE' " + myFunctionTest("yessE", reverse("Essey")));
 console.assert((myFunctionTest("yessE", reverse("Essey")))== "TEST SUCCEEDED", "Failed assert test");
-console.log("Expected output of findLongestWord(['Essey','Michael','Abraham','Biniam','Maharishi']) is Maharishi " + myFunctionTest("Maharishi", findLongestWord(["Essey", "Michael", "Abraham", "Biniam", "Maharishi"])));
+console.log("Expected output of findLongestWord(['Essey','Michael','Abraham','Biniam','Maharishi']) is 'Maharishi' " + myFunctionTest("Maharishi", findLongestWord(["Essey", "Michael", "Abraham", "Biniam", "Maharishi"])));
 console.assert((myFunctionTest("Maharishi", findLongestWord(["Essey", "Michael", "Abraham", "Biniam", "Maharishi"]))) == "TEST SUCCEEDED", "Failed assert test");
 console.log("Expected output of filterLongWords(['Essey','Michael','Abraham','Biniam','Maharishi'],6) is 'Michael','Abraham','Maharishi' " + myFunctionTest2('Michael,Abraham,Maharishi', filterLongWords(['Essey', 'Michael', 'Abraham', 'Biniam', 'Maharishi'], 6)));
 console.assert((myFunctionTest2('Michael,Abraham,Maharishi', filterLongWords(['Essey', 'Michael', 'Abraham', 'Biniam', 'Maharishi'], 6))) == "TEST SUCCEEDED", "Failed assert test");
