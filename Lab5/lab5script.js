@@ -101,18 +101,18 @@ function myFunctionTest2(expected,found){
 }
 
 console.log("Expected output of max(10,20) is 20  " + myFunctionTest(20, max(10, 20)));
-console.assert((myFunctionTest(20, max(10, 20)) != "TEST SUCCEEDED", 'Failed assert test'));
+console.assert((myFunctionTest(10, max(20, 10)))=="TEST SUCCEEDED","Failed assert test");
 console.log("Expected output of maxOfThree(10,20,30) is 30  " + myFunctionTest(30, maxOfThree(10, 20, 30)));
-console.assert((myFunctionTest(30, maxOfThree(10, 20, 30))!= "TEST SUCCEEDED", 'Failed assert test'));
+console.assert((myFunctionTest(30, maxOfThree(10, 20, 30)))== "TEST SUCCEEDED", "Failed assert test");
 console.log("Expected output of isVowel('a') is true  " + myFunctionTest(true, isVowel('a')));
-console.assert((myFunctionTest(true, isVowel('a'))!= "TEST SUCCEEDED", 'Failed assert test'));
+console.assert((myFunctionTest(true, isVowel('a')))== "TEST SUCCEEDED", "Failed assert test");
 console.log("Expected output of sum([1,2,3,4,5,6]) is 21  " + myFunctionTest(21, sum([1, 2, 3, 4, 5, 6])));
-console.assert((myFunctionTest(21, sum([1, 2, 3, 4, 5, 6])) != "TEST SUCCEEDED", 'Failed assert test'));
+console.assert((myFunctionTest(11, sum([1, 2, 3, 4, 5, 6]))) == "TEST SUCCEEDED", "Failed assert test");
 console.log("Expected output of multiply([1,2,3,4,5,6]) is 720  " + myFunctionTest(720, multiply([1, 2, 3, 4, 5, 6])));
-console.assert((myFunctionTest (720, multiply([1, 2, 3, 4, 5, 6])) != "TEST SUCCEEDED", 'Failed assert test'));
+console.assert((myFunctionTest (720, multiply([1, 2, 3, 4, 5, 6])))== "TEST SUCCEEDED", "Failed assert test");
 console.log("Expected output of reverse('Essey') is yessE " + myFunctionTest("yessE", reverse("Essey")));
-console.assert((myFunctionTest("yessE", reverse("Essey")) != "TEST SUCCEEDED", 'Failed assert test'));
+console.assert((myFunctionTest("yessE", reverse("Essey")))== "TEST SUCCEEDED", "Failed assert test");
 console.log("Expected output of findLongestWord(['Essey','Michael','Abraham','Biniam','Maharishi']) is Maharishi " + myFunctionTest("Maharishi", findLongestWord(["Essey", "Michael", "Abraham", "Biniam", "Maharishi"])));
-console.assert((myFunctionTest("Maharishi", findLongestWord(["Essey", "Michael", "Abraham", "Biniam", "Maharishi"])) != "TEST SUCCEEDED", 'Failed assert test'));
+console.assert((myFunctionTest("Maharishi", findLongestWord(["Essey", "Michael", "Abraham", "Biniam", "Maharishi"]))) == "TEST SUCCEEDED", "Failed assert test");
 console.log("Expected output of filterLongWords(['Essey','Michael','Abraham','Biniam','Maharishi'],6) is 'Michael','Abraham','Maharishi' " + myFunctionTest2('Michael,Abraham,Maharishi', filterLongWords(['Essey', 'Michael', 'Abraham', 'Biniam', 'Maharishi'], 6)));
-console.assert((myFunctionTest2('Michael,Abraham,Maharishi', filterLongWords(['Essey', 'Michael', 'Abraham', 'Biniam', 'Maharishi'], 6)) != "TEST SUCCEEDED", 'Failed assert test'));
+console.assert((myFunctionTest2('Michael,Abraham,Maharishi', filterLongWords(['Essey', 'Michael', 'Abraham', 'Biniam', 'Maharishi'], 6))) == "TEST SUCCEEDED", "Failed assert test");
