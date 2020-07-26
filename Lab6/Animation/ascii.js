@@ -24,8 +24,6 @@ function start() {
     document.getElementById("start").disabled = true;
     document.getElementById("animation").disabled = true;
     document.getElementById("turbo").disabled = false;
-
-
 }
 
 function startTimer() {
@@ -48,12 +46,8 @@ function animation() {
     document.getElementById("start").disabled = false;
     let animation = document.getElementById("animation").value;
     animate = ANIMATIONS[animation].split("=====\n");
-
     frame = ANIMATIONS[animation];
-
     document.getElementById("text-area").value = ANIMATIONS[animation];
-
-
 }
 
 function fSize() {
