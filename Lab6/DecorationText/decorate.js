@@ -1,4 +1,5 @@
 // alert("hello World");
+"use strict";
 window.onload = function () {
     // document.getElementById("bigger").onclick= function(){
     //     alert("Essey World!");
@@ -48,9 +49,14 @@ window.onload = function () {
 
     function piglatin() {
         let word = document.getElementById("texted");
-        if (word.value[0] == 'i' || word.value[0] == 'o' || word.value[0] == 'e' || word.value[0] == 'u' || word.value[0] == 'a') {
+        if(word.value==''){
+            word.value='';
+        }
+        else if (word.value[0] == 'i' || word.value[0] == 'o' || word.value[0] == 'e' || word.value[0] == 'u' || word.value[0] == 'a') {
             word.value = word.value + "-ay";
-        } else {
+            word.style.textAlign="left";
+        } 
+        else {
             word.style.textAlign = "right";
             word.value = word.value + "-ay";
         }
@@ -63,6 +69,10 @@ window.onload = function () {
         if (txt.value.length >= 5) {
             txt.value = "Malkovitch";
         }
+    }
+
+    document.getElementById("clear").onclick=function(){
+        document.getElementById("texted").value="";
     }
 
 }
