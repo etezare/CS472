@@ -14,16 +14,16 @@
 <body>
     <form>
     <div>
-    <label id="email">Email Address</label>
+    <label for="eml" id="email">Email Address</label>
     <input id="eml" placeholder="Enter email" type="text" required name="eml">
     <small id="text-muted">We'll never share your email with anyone else.</small><br/>
 </div>
- <div> <label  >Password</label><br/>
-    <input id="pss" placeholder="Password" name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="The Password field is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter">
-    <label >Website url</label>
+ <div> <label for="pss" >Password</label><br/>
+    <input id="pss" placeholder="Password" name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]) {10,}" title="The Password field is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter">
+    <label for="url" >Website url</label>
     <input type="url" id="url" name="url" placeholder="Enter website url" pattern="https?://.+" title="input must begin with either http:// or https://">
     <input id="check" type="checkbox" name="checkbox">
-    <label >Check me out</label><br/>
+    <label for="check" >Check me out</label><br/>
 </div>
     <div>
     <button class="btn">Submit</button>  
