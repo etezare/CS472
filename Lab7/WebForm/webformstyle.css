@@ -1,0 +1,31 @@
+small{
+    color: #777;
+    margin-top: 200px;
+    
+}
+body{
+    font-size: large;
+}
+#eml , #pss, #url{
+    width: 100%;
+    padding: 12px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button{
+    background-color:rgb(70, 113, 255);
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+}
+#validator{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+div{
+    margin: 10px;
+}
