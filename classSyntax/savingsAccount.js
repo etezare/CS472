@@ -1,12 +1,12 @@
 class SavingsAccount extends Account{
     constructor(number,interest){
         super(number);
-        this.interest=interest;
+        this._interest=interest;
     }
-    get interest(){
+    getInterest(){
         return this._interest;
     }
-    set interest(interest){
+    setInterest(interest){
         return this._interest=interest;
     } 
     

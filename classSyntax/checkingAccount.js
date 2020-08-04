@@ -1,21 +1,21 @@
 class CheckingAccount extends Account{
     constructor(number,overdraft){
         super(number);
-        this.overdraft=overdraft;
+        this._overdraft=overdraft;
     }
     withdraw(amount){
-       if(amount>(this.getBalance()+this.overdraft)){
+       if(amount>(this.getBalance()+this._overdraft)){
         return "Insufficient funds";
        }else{
-           this.getBalance=this.getBalance()-amount;
+           this._balance=this.getBalance()-amount;
        }
 
     }
-    get overdraft(){
+    getOverdraft(){
         return this._overdraft;
     }
 
-    set overdraft(overdraft){
+    setOverdraft(overdraft){
         return this._overdraft=overdraft;
     }
 

@@ -23,12 +23,12 @@ describe("Test SavingsAccount", function(){
     let saving=new SavingsAccount(2,0.5);
 
     it("Testing get Interest of SavingAccount", function(){
-        assert.equal(0.5, saving.interest);
+        assert.equal(0.5, saving.getInterest());
     });
 
     it("Testing set Interest of SavingAccount", function(){
-        saving.interest=1.5;
-        assert.equal(1.5, saving.interest);
+        saving.setInterest(1.5);
+        assert.equal(1.5, saving.getInterest());
     });
 
     it("Testing addInterest of SavingAccount", function(){
@@ -48,12 +48,12 @@ describe("Test CheckingAccount", function(){
 
     it("Testing get overdraft of CheckingAccount", function(){
         
-        assert.equal(500, checking._overdraft);
+        assert.equal(500, checking.getOverdraft());
     });
 
     it("Testing set overdraft of CheckingAccount", function(){
-        checking._overdraft=200;
-        assert.equal(200, checking._overdraft);
+        checking.setOverdraft(200);
+        assert.equal(200, checking.getOverdraft());
     });
 
     it("Testing Insufficient funds", function(){
