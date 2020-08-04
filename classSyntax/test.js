@@ -89,6 +89,6 @@ describe("Test Bank", function(){
     
     it("Testing closeAccount of Bank", function(){
                
-        assert.equal(2, bank.closeAccount(2));
+        assert.equal(3, bank.closeAccount(3));
     });
 });
