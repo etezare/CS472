@@ -1,4 +1,4 @@
-describe("Account Test", function(){
+describe("Test Account", function(){
     let account=new Account(1);
 
     it("Testing getNumber", function(){
@@ -18,7 +18,7 @@ describe("Account Test", function(){
         
 });
 
-describe("Savings Account Test", function(){
+describe("Test SavingsAccount", function(){
 
     let saving=new SavingsAccount(2,0.5);
 
@@ -42,7 +42,7 @@ describe("Savings Account Test", function(){
     });
 });
 
-describe("Checking Account Test", function(){
+describe("Test CheckingAccount", function(){
 
     let checking=new CheckingAccount(3,500);
 
@@ -68,7 +68,7 @@ describe("Checking Account Test", function(){
 
 });
 
-describe("Bank Test", function(){
+describe("Test Bank", function(){
     
     let bank=new Bank();
 
