@@ -4,7 +4,7 @@ class CheckingAccount extends Account{
         this.overdraft=overdraft;
     }
     withdraw(amount){
-       if((this.getBalance()-amount)<this.overdraft){
+       if(amount>(this.getBalance()+this.overdraft)){
         return "Insufficient funds";
        }else{
            this.getBalance=this.getBalance()-amount;
