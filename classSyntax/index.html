@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Bank Accounts</title>
@@ -14,23 +13,28 @@
         mocha.setup('bdd');
         // chai has a lot of stuff, let's make assert global
         let assert = chai.assert;
-    </script>
 
+    </script>
     <script src="account.js"></script>
     <script src="savingsaccount.js"></script>
     <script src="checkingaccount.js"></script>
     <script src="bank.js"></script>
     <script src="test.js"></script>
+
 </head>
 
 <body>
     <div id="mocha"></div>
-    <div  style="position: absolute; bottom: 0px; right: 0px;">
-        <a href="../index.html" ><img src="../home.gif" alt="home"></a>
 
+    <div style="position: absolute; bottom: 0px; right: 0px;">
+        <a href="../../index.html"><img src="../../home.gif" alt="home"></a>
+
+    </div>
     <script>
         mocha.run();
+
     </script>
+
 </body>
 
 </html>
