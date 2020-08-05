@@ -44,7 +44,7 @@ $(function(){
             let currentOpacity=parseFloat($(this).css("opacity"));
             let next=currentOpacity-0.1;
             $(this).css("opacity",next);
-        },200);
+        },250);
     }
 
     function resetOpacity(evt){
