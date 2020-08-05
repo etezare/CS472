@@ -1,0 +1,19 @@
+.circle{
+    background-color:red;
+    position:relative;
+    left:0px;
+    width:50px;
+    height:50px;
+    top:0px;
+    border:1px solid black;
+    border-radius:100%;
+    float:left;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: lightyellow;
+}
