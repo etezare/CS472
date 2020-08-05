@@ -9,7 +9,7 @@ $(function(){
         let count=parseInt($('#number').val());
 
         for(let i=0;i<count;i++){
-            var $newCircle = $('<div />').appendTo('body');
+            var $newCircle = $('<div/>').appendTo('body');
             $newCircle.addClass("circle");
             let col="rgb("+Math.floor(Math.random() * 255)+","+Math.floor(Math.random() * 255)+","+Math.floor(Math.random() * 255) +")";
             $newCircle.css("background-color",col);
