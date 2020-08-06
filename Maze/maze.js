@@ -1,6 +1,7 @@
 var i=0;
 var outCount=0;
 $(document).ready(function(){
+    "use strict";
   $(".boundary").mouseover(function(event){
     $(".boundary").addClass("youlose");
     // alert("you lost! :(")
