@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     else{
         $("#status").text("You lose!");
-        
+        outCount++;
     }
 
  });
