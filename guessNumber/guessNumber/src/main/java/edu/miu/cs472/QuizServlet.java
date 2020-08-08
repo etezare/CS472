@@ -15,8 +15,8 @@ public class QuizServlet extends HttpServlet {
             throws ServletException, IOException {
 
         PrintWriter out = response.getWriter();
-        String ans="";
-        genQuizOverPage(sessQuiz, out,sessQuiz.getCurrentQuestion()[sessQuiz.getCurrentQuesitionIndex()], true, ans);
+        String answer="";
+        genQuizOverPage(sessQuiz, out,sessQuiz.getCurrentQuestion()[sessQuiz.getCurrentQuesitionIndex()], true, answer);
     }
 
     private void genQuizOverPage(Quiz sessQuiz, PrintWriter out, String currQuest, boolean error, String answer) {
