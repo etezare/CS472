@@ -1,4 +1,5 @@
-package edu.miu.cs472;
+package model;
+
 
 public class Quiz {
     private String [] answers ={"9","8","36","13","32"};
@@ -12,9 +13,11 @@ public class Quiz {
             index++;
             scoreAnswer();
             return true;
+        }else {
+        	 return false;
         }
 
-        return false;
+       
 
     }
     public int getNumQuestions() {
@@ -29,6 +32,9 @@ public class Quiz {
     }
     public int getCurrentQuesitionIndex(){
         return index;
+    }
+    public int getScore(){
+        return score;
     }
 
     public String[]  getCurrentQuestion(){

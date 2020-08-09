@@ -28,7 +28,6 @@ public class QuizServlet extends HttpServlet {
         if (btn != null) {
             HttpSession session = request.getSession();
             session.removeAttribute("quiz");
-
         }
         String answer = request.getParameter("txtAnswer");
         HttpSession session = request.getSession();
@@ -41,7 +40,7 @@ public class QuizServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         boolean check = quiz.isCorrect(answer);
         if (btn != null) {
-            check = false;
+            check = true;
         }
         if (quiz.getCurrentQuesitionIndex() > 4) {
             genQuizOverPage(out);
@@ -66,7 +65,7 @@ public class QuizServlet extends HttpServlet {
         out.print("<p>Your answer:<input type='text' name='txtAnswer' value='' /></p> ");
 
         /* if incorrect, then print out error message */
-        if (error && (answer != null)) {  //REFACTOR?-- assumes answer null only when first open page
+        if (!error && (answer != null)) {  //REFACTOR?-- assumes answer null only when first open page
             out.print("<p style='color:red'>Your last answer was not correct! Please try again</p> ");
         }
         out.print("<p><input type='submit' name='btnNext' value='Next' /> <input type='submit' name='reset' value='Restart!' /></p>\n" +
@@ -82,7 +81,11 @@ public class QuizServlet extends HttpServlet {
         out.print("<title>NumberQuiz is over</title> ");
         out.print("</head> ");
         out.print("<body> ");
-        out.print("<p style='color:red'>The number quiz is over!</p>	</body> ");
+        out.print("<p style='color:red'>The number quiz is over!</p>");
+        out.print("	<form method='post'>");
+        out.print("<input type='text' name='txtAnswer' hidden value='' />");
+        out.print("<input type='submit' name='reset' value='Start Again!' />");
+        out.print("</form>  </body> ");
         out.print("</html> ");
     }
 }
