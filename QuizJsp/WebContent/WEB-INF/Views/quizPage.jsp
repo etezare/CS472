@@ -13,7 +13,7 @@
                   <p>Guess the next number in the sequence!</p>
                 <p>
                     <%-- Displays the question in a formatted form --%>
-                    ${quiz.getCurrentQuestion()[quiz.getCurrentQuesitionIndex()]}<font style='color:red'><b> ? </b></font>]</br>
+                    ${quiz.getQuestion()}<font style='color:red'><b> ? </b></font>]</br>
                 </p>
                 <p>Your answer:<input type='text' name='txtAnswer' value='' /></p>
                 <font style='color:red'><b>${wrongAnswer}</b></font>

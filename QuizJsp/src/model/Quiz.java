@@ -20,6 +20,9 @@ public class Quiz {
        
 
     }
+    public String getQuestion() {
+    	return getCurrentQuestion()[getCurrentQuesitionIndex()];
+    }
     public int getNumQuestions() {
         return 5;
 

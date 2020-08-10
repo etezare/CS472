@@ -54,7 +54,7 @@ public class QuizServlet extends HttpServlet {
 	        	dis=request.getRequestDispatcher("/WEB-INF/Views/QuizOverPage.jsp");
 	        	dis.forward(request, response);
 	        }
-	        PrintWriter out = response.getWriter();
+	       
 	       
 	        if(check==true && quiz.getCurrentQuesitionIndex()<=4) {
 	        	request.setAttribute("wrongAnswer", "");         	
